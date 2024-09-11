@@ -179,7 +179,7 @@ const skillCateogries = [
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.skill-card-wrapper').forEach((card, index) => {
+            entry.target.querySelectorAll('.skill-card-wrapper').forEach((card) => {
               card.classList.add('animate')
             })
 
