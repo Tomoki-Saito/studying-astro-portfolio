@@ -1,10 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
 import { getCollection } from 'astro:content'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+import Layout from '../../layouts/Layout.astro'
 import FormattedDate from '../../components/FormattedDate.astro'
 
-// pubDate の降順に並べ替え　（新しい順）
+// pubDate の降順 （新しい順） でソート
 const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 ---
 
