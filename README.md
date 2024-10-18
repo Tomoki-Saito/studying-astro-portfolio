@@ -1,4 +1,8 @@
-# Astro Starter Kit: Blog
+# スタディングテック Astro ポートフォリオサイト制作講座
+
+[スタディングテック](https://studying.jp/tech/)で制作したポートフォリオサイトのリポジトリです！
+
+## Astro Starter Kit: Blog
 
 ```sh
 npm create astro@latest -- --template blog
